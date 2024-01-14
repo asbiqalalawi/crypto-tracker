@@ -13,6 +13,9 @@ struct HomeView: View {
     @State private var showPortfolio: Bool = false // <- animated right portfolio
     @State private var showPortfolioView: Bool = false // <- show portfolio sheet
     
+    @State private var selectedCoin: CoinModel? = nil
+    @State private var showDetailView: Bool = false
+    
     var body: some View {
         ZStack {
             // background layer
@@ -40,6 +43,12 @@ struct HomeView: View {
                 Spacer()
             }
         }
+        .navigationDestination(
+             isPresented: $showDetailView) {
+                 DetailLoadingView(coin: $selectedCoin)
+                  Text("")
+                      .hidden()
+             }
     }
 }
 
@@ -83,26 +92,37 @@ extension HomeView {
         .padding(.horizontal)
     }
     
+    private var allCoinsList: some View {
+        List {
+            ForEach(vm.allCoins) { coin in
+                CoinRowView(coin: coin, showHoldingColumn: false)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
+            }
+        }
+        .listStyle(.plain)
+        .transition(.move(edge: .leading))
+    }
+    
     private var portfolioCoinsList: some View {
         List {
             ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
         }
         .listStyle(.plain)
         .transition(.move(edge: .trailing))
     }
     
-    private var allCoinsList: some View {
-        List {
-            ForEach(vm.allCoins) { coin in
-                CoinRowView(coin: coin, showHoldingColumn: false)
-                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
-            }
-        }
-        .listStyle(.plain)
-        .transition(.move(edge: .leading))
+    private func segue(coin: CoinModel) {
+        selectedCoin = coin
+        showDetailView.toggle()
     }
     
     private var columnTitles: some View {
