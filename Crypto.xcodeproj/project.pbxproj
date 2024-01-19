@@ -40,6 +40,9 @@
 		04B43BD02B234AE600963F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B43BCF2B234AE600963F7C /* Preview Assets.xcassets */; };
 		04B43BDA2B234CEC00963F7C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B43BD92B234CEC00963F7C /* Color.swift */; };
 		04B9BBD72B2B2EF900D13A4F /* CoinDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9BBD62B2B2EF900D13A4F /* CoinDataServices.swift */; };
+		04D58B452B5A68AE001BC8C7 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D58B442B5A68AE001BC8C7 /* CoinDetailModel.swift */; };
+		04D58B472B5A6EC4001BC8C7 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D58B462B5A6EC4001BC8C7 /* CoinDetailDataService.swift */; };
+		04D58B492B5A7036001BC8C7 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D58B482B5A7036001BC8C7 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		04B43BCF2B234AE600963F7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04B43BD92B234CEC00963F7C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		04B9BBD62B2B2EF900D13A4F /* CoinDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataServices.swift; sourceTree = "<group>"; };
+		04D58B442B5A68AE001BC8C7 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
+		04D58B462B5A6EC4001BC8C7 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		04D58B482B5A7036001BC8C7 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				04034F1A2B25714100223FA4 /* CoinModel.swift */,
+				04D58B442B5A68AE001BC8C7 /* CoinDetailModel.swift */,
 				043A05FA2B3BD2AC000CC048 /* StatisticModel.swift */,
 				043A06002B3C4F1F000CC048 /* MarketDataModel.swift */,
 				041B6DE32B501A51006E9C5E /* PortfolioContainer.xcdatamodeld */,
@@ -182,6 +189,7 @@
 		049F88172B5423AA004CF8C5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				04D58B482B5A7036001BC8C7 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				04B9BBD62B2B2EF900D13A4F /* CoinDataServices.swift */,
+				04D58B462B5A6EC4001BC8C7 /* CoinDetailDataService.swift */,
 				0409168F2B3797F20061FDC9 /* CoinImageService.swift */,
 				043A06022B3C50E0000CC048 /* MarketDataService.swift */,
 				041B6DE62B501ACF006E9C5E /* PortfolioDataService.swift */,
@@ -353,6 +362,7 @@
 				04B43BC92B234AE400963F7C /* CryptoApp.swift in Sources */,
 				04B43BDA2B234CEC00963F7C /* Color.swift in Sources */,
 				049F881A2B5423E0004CF8C5 /* DetailView.swift in Sources */,
+				04D58B492B5A7036001BC8C7 /* DetailViewModel.swift in Sources */,
 				043A05FF2B3BDA98000CC048 /* HomeStatsView.swift in Sources */,
 				043A05F72B3ACE77000CC048 /* SearchBarView.swift in Sources */,
 				0411B52A2B42670D00196A79 /* CoinLogoView.swift in Sources */,
@@ -365,6 +375,8 @@
 				041B6DE92B511D65006E9C5E /* HapticManager.swift in Sources */,
 				04034F212B26249700223FA4 /* Double.swift in Sources */,
 				040916902B3797F20061FDC9 /* CoinImageService.swift in Sources */,
+				04D58B472B5A6EC4001BC8C7 /* CoinDetailDataService.swift in Sources */,
+				04D58B452B5A68AE001BC8C7 /* CoinDetailModel.swift in Sources */,
 				04034F1B2B25714100223FA4 /* CoinModel.swift in Sources */,
 				041B6DE72B501ACF006E9C5E /* PortfolioDataService.swift in Sources */,
 			);
