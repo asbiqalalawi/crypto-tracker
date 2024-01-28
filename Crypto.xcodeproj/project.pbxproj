@@ -181,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				049F88172B5423AA004CF8C5 /* ViewModels */,
-				049F88182B5423C1004CF8C5 /* Veiws */,
+				049F88182B5423C1004CF8C5 /* Views */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -194,12 +194,12 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		049F88182B5423C1004CF8C5 /* Veiws */ = {
+		049F88182B5423C1004CF8C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				049F88192B5423E0004CF8C5 /* DetailView.swift */,
 			);
-			path = Veiws;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		04A624D02B2C8CE100525CE2 /* Utilities */ = {
