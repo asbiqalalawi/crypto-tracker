@@ -36,6 +36,8 @@
 		043A06012B3C4F1F000CC048 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A06002B3C4F1F000CC048 /* MarketDataModel.swift */; };
 		043A06032B3C50E0000CC048 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A06022B3C50E0000CC048 /* MarketDataService.swift */; };
 		044F27042B6E87F60090A33D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F27032B6E87F60090A33D /* String.swift */; };
+		049E2D882B74FE81009E62A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049E2D872B74FE81009E62A4 /* LaunchScreen.storyboard */; };
+		049E2D8A2B767958009E62A4 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E2D892B767957009E62A4 /* LaunchView.swift */; };
 		049EBB9D2B29EF09004A98BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EBB9C2B29EF09004A98BA /* HomeViewModel.swift */; };
 		049F881A2B5423E0004CF8C5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F88192B5423E0004CF8C5 /* DetailView.swift */; };
 		04A624D22B2C8D0600525CE2 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A624D12B2C8D0600525CE2 /* NetworkingManager.swift */; };
@@ -79,6 +81,8 @@
 		043A06002B3C4F1F000CC048 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 		043A06022B3C50E0000CC048 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		044F27032B6E87F60090A33D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		049E2D872B74FE81009E62A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049E2D892B767957009E62A4 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		049EBB9C2B29EF09004A98BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		049F88192B5423E0004CF8C5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		04A624D12B2C8D0600525CE2 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -107,10 +111,11 @@
 		04034F0D2B23FBBB00223FA4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				04284AA32B6F1C4F00CC95AD /* Settings */,
 				04034F132B23FD9A00223FA4 /* Components */,
-				04034F0E2B23FBD300223FA4 /* Home */,
 				049F88162B54238A004CF8C5 /* Detail */,
+				04034F0E2B23FBD300223FA4 /* Home */,
+				049E2D852B74FE51009E62A4 /* Launch */,
+				04284AA32B6F1C4F00CC95AD /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -198,6 +203,23 @@
 			isa = PBXGroup;
 			children = (
 				04284AA52B6F1C7100CC95AD /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		049E2D852B74FE51009E62A4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				049E2D862B74FE61009E62A4 /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		049E2D862B74FE61009E62A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				049E2D872B74FE81009E62A4 /* LaunchScreen.storyboard */,
+				049E2D892B767957009E62A4 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049E2D882B74FE81009E62A4 /* LaunchScreen.storyboard in Resources */,
 				04B43BD02B234AE600963F7C /* Preview Assets.xcassets in Resources */,
 				0409168B2B37941E0061FDC9 /* Assets.xcassets in Resources */,
 			);
@@ -389,6 +412,7 @@
 				0409168E2B37947C0061FDC9 /* CoinImageView.swift in Sources */,
 				04034F122B23FC0200223FA4 /* HomeView.swift in Sources */,
 				043A05F92B3AD417000CC048 /* UIApplication.swift in Sources */,
+				049E2D8A2B767958009E62A4 /* LaunchView.swift in Sources */,
 				04B43BC92B234AE400963F7C /* CryptoApp.swift in Sources */,
 				04B43BDA2B234CEC00963F7C /* Color.swift in Sources */,
 				049F881A2B5423E0004CF8C5 /* DetailView.swift in Sources */,
@@ -552,6 +576,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -582,6 +607,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
