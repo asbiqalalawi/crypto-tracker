@@ -23,9 +23,10 @@ struct SettingsView: View {
                 coinGecko
                 developer
             }
+            .scrollContentBackground(.hidden)
+            .background(Color.theme.backgroundColor)
             .listStyle(GroupedListStyle())
-            .navigationTitle("Settings")
-            .toolbar(content: {
+            .navigationTitle("Settings").toolbar(content: {
                 ToolbarItem(placement: .topBarLeading) {
                     XMarkButton()
                 }
